@@ -9,6 +9,7 @@ class DatabaseSeeder extends Seeder
 //        StateSeeder::class,
         UserTypeSeeder::class,
         UserSeeder::class,
+        SpeciesSeeder::class,
 //        BusinessTypeSeeder::class,
 //        PropertyTypeSeeder::class,
 //        PropertyCategorySeeder::class,

@@ -82,6 +82,20 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Root <span class="caret"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                                    <a class="dropdown-item"
+                                       href="{{ route('web.species.index') }}">
+                                        <i class="fas fa-user-circle"></i>
+                                        Species
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ auth()->user()->first_name }} <span class="caret"></span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -91,11 +105,7 @@
                                         <i class="fas fa-user-circle"></i>
                                         Mi Perfil
                                     </a>
-                                    <a class="dropdown-item"
-                                       href="#">
-                                        <i class="fas fa-home"></i>
-                                        Mis Propiedades
-                                    </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">
@@ -108,7 +118,7 @@
                                     </form>
                                 </div>
                             </li>
-                            @endguest
+                        @endguest
                 </ul>
             </div>
         </div>
@@ -116,7 +126,7 @@
 
     <main class="py-4">
 
-        <toastr :message="{{ json_encode(session('login')) }}"></toastr>
+{{--        <toastr :message="{{ json_encode(session('login')) }}"></toastr>--}}
 
         <div class="container">
             @yield('content')
