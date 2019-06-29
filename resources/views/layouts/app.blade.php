@@ -88,7 +88,7 @@
 
                                     <a class="dropdown-item"
                                        href="{{ route('web.species.index') }}">
-                                        <i class="fas fa-user-circle"></i>
+                                        <i class="fas fa-paw"></i>
                                         Species
                                     </a>
 
