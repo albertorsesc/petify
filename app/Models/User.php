@@ -11,9 +11,9 @@ class User extends Authenticatable
 {
     use Notifiable;
     
-    protected $fillable = ['uuid', 'first_name', 'last_name', 'user_type_id', 'email', 'phone', 'password', 'status'];
+    protected $fillable = ['uuid', 'first_name', 'last_name', 'user_type_id', 'email', 'phone', 'password', 'status', 'api_token'];
     protected $hidden = ['password', 'remember_token',];
-    protected $casts = ['email_verified_at' => 'datetime',];
+    protected $casts = ['email_verified_at' => 'datetime', 'status' => 'boolean'];
     
     public static function boot()
     {
@@ -36,11 +36,25 @@ class User extends Authenticatable
     }
     
     /**
+     * Mutators
+     */
+    
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = bcrypt($password);
+    }
+    
+    /**
      * Helpers
      * */
     
     public function fullName()
     {
         return $this->first_name . ' ' . $this->last_name;
+    }
+    
+    public static function generateApiToken()
+    {
+        return Str::random(64);
     }
 }

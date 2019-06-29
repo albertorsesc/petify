@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Requests\UserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Resources\UserResource;
@@ -17,5 +18,10 @@ class UserController extends Controller
                 ->orderBy('first_name')
                 ->get()
         );
+    }
+    
+    public function store(UserRequest $request)
+    {
+        return new UserResource(User::create($request->all()));
     }
 }

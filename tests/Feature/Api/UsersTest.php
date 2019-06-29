@@ -2,8 +2,9 @@
 
 namespace Tests\Feature\Api;
 
-use App\Models\User;
 use Tests\TestCase;
+use App\Models\User;
+use Illuminate\Support\Arr;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class UsersTest extends TestCase
@@ -37,5 +38,32 @@ class UsersTest extends TestCase
                 ]
             ]
         ]);
+    }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['POST', '/api/users']
+     */
+    public function store_a_user()
+    {
+        $userData = $this->make(User::class);
+        $request = [
+            'first_name' => $userData->first_name,
+            'last_name' => $userData->last_name,
+            'user_type_id' => $userData->user_type_id,
+            'email' => $userData->email,
+            'phone' => $userData->phone,
+            'status' => $userData->status,
+            'password' => 'secret',
+            'password_confirmation' => 'secret',
+            'api_token' => $userData->generateApiToken()
+        ];
+        
+        $response = $this->postJson(route('users.store'), $request);
+        $response->assertStatus(201);
+        $response->assertJson(['data' => ['fullName' => $userData->fullName()]]);
+        
+        $this->assertDatabaseHas('users', Arr::except($request, ['password', 'password_confirmation']));
     }
 }
