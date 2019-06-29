@@ -21,6 +21,11 @@ class UserRequestTest extends TestCase
             route('users.store'),
             $this->make(User::class, ['first_name' => null])->toArray()
         )->assertJsonValidationErrors('first_name');
+    
+        $this->putJson(
+            route('users.update', $this->create(User::class)),
+            $this->make(User::class, ['first_name' => null])->toArray()
+        )->assertJsonValidationErrors('first_name');
     }
     
     /**
@@ -34,10 +39,10 @@ class UserRequestTest extends TestCase
             $this->make(User::class, ['first_name' => Str::random(51)])->toArray()
         )->assertJsonValidationErrors('first_name');
         
-        /*$this->putJson(
+        $this->putJson(
             route('users.update', $this->create(User::class)),
             $this->make(User::class, ['first_name' => Str::random(51)])->toArray()
-        )->assertJsonValidationErrors('first_name');*/
+        )->assertJsonValidationErrors('first_name');
     }
     
     /**
@@ -51,10 +56,10 @@ class UserRequestTest extends TestCase
             $this->make(User::class, ['last_name' => null])->toArray()
         )->assertJsonValidationErrors('last_name');
     
-        /*$this->putJson(
+        $this->putJson(
             route('users.update', $this->create(User::class)),
             $this->make(User::class, ['last_name' => null])->toArray()
-        )->assertJsonValidationErrors('last_name');*/
+        )->assertJsonValidationErrors('last_name');
     }
     
     /**
@@ -68,10 +73,10 @@ class UserRequestTest extends TestCase
             $this->make(User::class, ['last_name' => Str::random(51)])->toArray()
         )->assertJsonValidationErrors('last_name');
         
-        /*$this->putJson(
+        $this->putJson(
             route('users.update', $this->create(User::class)),
             $this->make(User::class, ['last_name' => Str::random(51)])->toArray()
-        )->assertJsonValidationErrors('last_name');*/
+        )->assertJsonValidationErrors('last_name');
     }
     
     /**
@@ -84,6 +89,12 @@ class UserRequestTest extends TestCase
             route('users.store'),
             $this->make(User::class, ['user_type_id' => null])->toArray()
         )->assertJsonValidationErrors('user_type_id');
+    
+        $this->putJson(
+            route('users.update', $this->create(User::class)),
+            $this->make(User::class, ['user_type_id' => null])->toArray()
+        )->assertJsonValidationErrors('user_type_id');
+        
     }
     
     /**
@@ -96,6 +107,12 @@ class UserRequestTest extends TestCase
             route('users.store'),
             $this->make(User::class, ['user_type_id' => 10001])->toArray()
         )->assertJsonValidationErrors('user_type_id');
+    
+        $this->putJson(
+            route('users.update', $this->create(User::class)),
+            $this->make(User::class, ['user_type_id' => 10001])->toArray()
+        )->assertJsonValidationErrors('user_type_id');
+    
     }
     
     /**
@@ -106,6 +123,11 @@ class UserRequestTest extends TestCase
     {
         $this->postJson(
             route('users.store'),
+            $this->make(User::class, ['email' => null])->toArray()
+        )->assertJsonValidationErrors('email');
+    
+        $this->putJson(
+            route('users.update', $this->create(User::class)),
             $this->make(User::class, ['email' => null])->toArray()
         )->assertJsonValidationErrors('email');
     }
@@ -122,10 +144,10 @@ class UserRequestTest extends TestCase
             $this->make(User::class, ['email' => 'arosas@petify.com'])->toArray()
         )->assertJsonValidationErrors('email');
         
-        /*$this->putJson(
+        $this->putJson(
             route('users.update', $this->create(User::class)),
             $this->make(User::class, ['email' => 'arosas@petify.com'])->toArray()
-        )->assertJsonValidationErrors('email');*/
+        )->assertJsonValidationErrors('email');
     }
     
     /**
@@ -139,10 +161,10 @@ class UserRequestTest extends TestCase
             $this->make(User::class, ['email' => Str::random(91) . '@email.com'])->toArray()
         )->assertJsonValidationErrors('email');
         
-        /*$this->putJson(
+        $this->putJson(
             route('users.update', $this->create(User::class)),
             $this->make(User::class, ['email' => Str::random(91) . '@email.com'])->toArray()
-        )->assertJsonValidationErrors('email');*/
+        )->assertJsonValidationErrors('email');
     }
     
     /**
@@ -156,10 +178,10 @@ class UserRequestTest extends TestCase
             $this->make(User::class, ['email' => 'arosas@'])->toArray()
         )->assertJsonValidationErrors('email');
         
-        /*$this->putJson(
+        $this->putJson(
             route('users.update', $this->create(User::class)),
             $this->make(User::class, ['email' => 'arosas@'])->toArray()
-        )->assertJsonValidationErrors('email');*/
+        )->assertJsonValidationErrors('email');
     }
     
     /**
@@ -173,10 +195,10 @@ class UserRequestTest extends TestCase
             $this->make(User::class, ['phone' => Str::random(61)])->toArray()
         )->assertJsonValidationErrors('phone');
         
-        /*$this->putJson(
+        $this->putJson(
             route('users.update', $this->create(User::class)),
             $this->make(User::class, ['phone' => Str::random(61)])->toArray()
-        )->assertJsonValidationErrors('phone');*/
+        )->assertJsonValidationErrors('phone');
     }
     
     /**
@@ -199,16 +221,19 @@ class UserRequestTest extends TestCase
     {
         $this->postJson(
             route('users.store'),
-            $this->make(User::class, ['password' => Str::random(5)])->toArray()
+            $this->make(User::class, [
+                'password' => 'abcde',
+                'password' => 'abcde',
+            ])->toArray()
         )->assertJsonValidationErrors('password');
         
-        /*$this->putJson(
+        $this->putJson(
             route('users.update', $this->create(User::class)),
             [
                 'password' => 'abcde',
                 'password_confirmation' => 'abcde',
             ]
-        )->assertJsonValidationErrors('password');*/
+        )->assertJsonValidationErrors('password');
     }
     
     /**

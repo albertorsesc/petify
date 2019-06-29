@@ -24,4 +24,17 @@ class UserController extends Controller
     {
         return new UserResource(User::create($request->all()));
     }
+    
+    public function show(User $user)
+    {
+        return new UserResource($user);
+    }
+    
+    public function update(UserRequest $request, User $user)
+    {
+        $user->update($request->all());
+        
+        return new UserResource($user);
+    }
+    
 }

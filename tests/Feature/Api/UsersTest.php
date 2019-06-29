@@ -66,4 +66,52 @@ class UsersTest extends TestCase
         
         $this->assertDatabaseHas('users', Arr::except($request, ['password', 'password_confirmation']));
     }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['GET', '/api/users/{user}']
+     */
+    public function get_a_user()
+    {
+        $user = $this->create(User::class);
+        $response = $this->getJson(route('users.show', $user));
+        $response->assertOk();
+        $response->assertJson([
+            'data' => [
+                'id' => $user->id,
+                'fullName' => $user->fullName(),
+            ]
+        ]);
+    }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['PUT', '/api/users/{user}']
+     */
+    public function update_a_user()
+    {
+        $user = $this->create(User::class);
+        $userData = $this->make(User::class);
+        $request = [
+            'first_name' => $userData->first_name,
+            'last_name' => $userData->last_name,
+            'user_type_id' => $userData->user_type_id,
+            'email' => $userData->email,
+            'phone' => $userData->phone,
+            'status' => $userData->status,
+        ];
+        
+        $response = $this->putJson(route('users.update', $user), $request);
+        $response->assertStatus(200);
+        $response->assertJson([
+            'data' => [
+                'id' => $user->id,
+                'fullName' => $userData->fullName()
+            ]
+        ]);
+        
+        $this->assertDatabaseHas('users', $request);
+    }
 }
