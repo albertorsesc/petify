@@ -2,11 +2,13 @@
     <div>
 
         <div class="row-fluid">
-            <button type="button"
-                    @click="openModal('post')"
-                    class="btn btn-primary text-white shadow-lg">
+            <button @click="openModal('post')"
+                    class="btn btn-primary btn-md shadow-lg float-left">
                 <i class="fa fa-plus"></i>
             </button>
+            <div class="text-center">
+                <h3>Especies</h3>
+            </div>
         </div>
 
         <hr>
@@ -38,6 +40,9 @@
                                         @click="openModal('put', specie)"
                                         class="btn btn-warning btn-xs">
                                     <i class="fa fa-edit"></i>
+                                </button>
+                                <button type="button" @click="onDelete(specie)" class="btn btn-danger btn-xs">
+                                    <i class="fa fa-trash"></i>
                                 </button>
                                 <!--<button @click="toggleStatus(specie)"
                                         :class="['btn', 'btn-xs', toggleStatusClass(specie)]">
@@ -173,6 +178,18 @@
                         }
                     )
             },
+            destroy() {
+                Requests
+                    .destroy(
+                        this.speciesUrl,
+                        this.specieId,
+                        () => {
+                            this.index()
+                            SweetAlert.success(`La Especie ha sido eliminada exitosamente!`)
+                        },
+                        error => { console.log(error) }
+                    )
+            },
             openModal(action, specie) {
                 this.errors = []
                 this.specie = {}
@@ -206,6 +223,13 @@
                 this.modal = {}
                 $('#modal').modal('hide')
             },
+            onDelete(specie) {
+                this.specieId = specie.id
+                SweetAlert.danger(
+                    'Eliminar la Especie: ' + specie.name,
+                    'La Especie ha sido eliminada exitosamente!',
+                )
+            },
             formAction() {
                 if (this.actionType === 'post') {
                     this.store()
@@ -219,6 +243,7 @@
                 Event.$on('modal:submit', () => { this.formAction() })
                 Event.$on('modal:open', () => { this.openModal() })
                 Event.$on('modal:close', () => { this.closeModal() })
+                Event.$on('SweetAlert:destroy', () => { this.destroy() })
             }
         },
         mounted() {
