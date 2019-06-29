@@ -27,4 +27,20 @@ class User extends Authenticatable
     {
         return 'uuid';
     }
+    
+    /** Relations */
+    
+    public function userType()
+    {
+        return $this->belongsTo(UserType::class);
+    }
+    
+    /**
+     * Helpers
+     * */
+    
+    public function fullName()
+    {
+        return $this->first_name . ' ' . $this->last_name;
+    }
 }
