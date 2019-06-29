@@ -114,4 +114,18 @@ class UsersTest extends TestCase
         
         $this->assertDatabaseHas('users', $request);
     }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['DELETE', '/api/users/{user}']
+     */
+    public function soft_delete_a_user()
+    {
+        $user = $this->create(User::class);
+        
+        $this->deleteJson(route('users.destroy', $user))->assertStatus(204);
+        
+        $this->assertSoftDeleted('users', $user->toArray());
+    }
 }
