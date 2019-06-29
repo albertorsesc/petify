@@ -2,32 +2,20 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Traits\Uuidable;
 use Illuminate\Support\Str;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable, SoftDeletes;
+    use Notifiable, SoftDeletes, Uuidable;
     
     protected $fillable = ['uuid', 'first_name', 'last_name', 'user_type_id', 'email', 'phone', 'password', 'status', 'api_token'];
     protected $hidden = ['password', 'remember_token',];
     protected $casts = ['email_verified_at' => 'datetime', 'status' => 'boolean'];
-    
-    public static function boot()
-    {
-        parent::boot();
-        self::creating(function ($user) {
-            $user->uuid = (string) Str::uuid();
-        });
-    }
-    
-    public function getRouteKeyName()
-    {
-        return 'uuid';
-    }
     
     /** Relations */
     
