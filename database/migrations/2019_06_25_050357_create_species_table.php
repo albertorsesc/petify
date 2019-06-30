@@ -16,7 +16,6 @@ class CreateSpeciesTable extends Migration
         Schema::create('species', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('display_name');
         });
     }
 

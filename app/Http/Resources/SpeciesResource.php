@@ -17,7 +17,6 @@ class SpeciesResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'displayName' => $this->display_name,
         ];
     }
 }

@@ -27,20 +27,4 @@ class SpeciesRequestTest extends TestCase
         )->assertJsonValidationErrors('name');
     }
     
-    /**
-     *   @test
-     *   @throws \Throwable
-     */
-    public function display_name_is_required()
-    {
-        $this->postJson(
-            route('species.store'),
-            $this->make(Species::class, ['display_name' => null])->toArray()
-        )->assertJsonValidationErrors('display_name');
-    
-        $this->putJson(
-            route('species.update', $this->create(Species::class)),
-            $this->make(Species::class, ['display_name' => null])->toArray()
-        )->assertJsonValidationErrors('display_name');
-    }
 }

@@ -25,7 +25,6 @@ class SpeciesTest extends TestCase
                 [
                     'id' => $species->id,
                     'name' => $species->name,
-                    'displayName' => $species->display_name,
                 ]
             ]
         ]);

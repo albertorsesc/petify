@@ -25,7 +25,6 @@ class SpeciesRequest extends FormRequest
     {
         return [
             'name' => ['required'],
-            'display_name' => ['required'],
         ];
     }
 }
