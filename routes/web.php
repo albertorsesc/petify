@@ -15,6 +15,13 @@ Route::middleware('auth')->group(function () {
         
         Route::get('species', 'SpeciesController')->name('web.species.index');
         
+        Route::get('users', 'UserController@index')->name('web.users.index');
+    
+        /** My Routes */
+        Route::prefix('me')->group(function() {
+            Route::get('{user}', 'UserController@show')->name('web.users.show');
+        });
+        
     });
     
 });

@@ -54,7 +54,6 @@ class UsersTest extends TestCase
             'user_type_id' => $userData->user_type_id,
             'email' => $userData->email,
             'phone' => $userData->phone,
-            'status' => $userData->status,
             'password' => 'secret',
             'password_confirmation' => 'secret',
             'api_token' => $userData->generateApiToken()
@@ -100,7 +99,6 @@ class UsersTest extends TestCase
             'user_type_id' => $userData->user_type_id,
             'email' => $userData->email,
             'phone' => $userData->phone,
-            'status' => $userData->status,
         ];
         
         $response = $this->putJson(route('users.update', $user), $request);
