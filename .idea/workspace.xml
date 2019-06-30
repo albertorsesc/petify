@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1666422-345d-41f9-b8eb-c01ae2b0142b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/User.php" afterPath="$PROJECT_DIR$/app/Models/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/app.js" afterPath="$PROJECT_DIR$/resources/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/components/Modal.vue" afterPath="$PROJECT_DIR$/resources/js/components/Modal.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,122 +23,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SpeciesTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-              <folding>
-                <element signature="e#305#758#0#PHP" expanded="false" />
-                <element signature="e#1374#1738#0#PHP" expanded="false" />
-                <element signature="e#1859#2395#0#PHP" expanded="false" />
-                <element signature="e#2519#2785#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UsersTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Api/UsersTest.php">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/Web/UsersTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="122" column="12" lean-forward="false" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+            <state relative-caret-position="330">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <element signature="e#37#56#0#PHP" expanded="true" />
-                <element signature="e#326#1075#0#PHP" expanded="false" />
-                <element signature="e#1185#2039#0#PHP" expanded="false" />
-                <element signature="e#1287#1720#0#PHP" expanded="false" />
-                <element signature="e#2155#2500#0#PHP" expanded="false" />
-                <element signature="e#2616#3415#0#PHP" expanded="false" />
-                <element signature="e#3534#3782#0#PHP" expanded="false" />
+                <element signature="e#258#459#0#PHP" expanded="false" />
+                <element signature="e#528#769#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRequestTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Unit/Http/Requests/UserRequestTest.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/users/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="237" column="4" lean-forward="true" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
-              <folding>
-                <element signature="e#44#63#0#PHP" expanded="true" />
-                <element signature="e#1098#1311#0#PHP" expanded="false" />
-                <element signature="e#6030#6196#0#PHP" expanded="false" />
-                <element signature="e#6362#6532#0#PHP" expanded="false" />
-                <element signature="e#6608#7200#0#PHP" expanded="false" />
-                <element signature="e#7269#7820#0#PHP" expanded="false" />
-                <element signature="e#7328#7545#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="385">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <file leaf-file-name="StatusIcon.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/components/StatusIcon.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+            <state relative-caret-position="853">
+              <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <file leaf-file-name="Users.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/js/views/Users.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#30#54#0#PHP" expanded="true" />
-                <element signature="e#801#919#0#PHP" expanded="false" />
-              </folding>
+            <state relative-caret-position="633">
+              <caret line="381" column="5" lean-forward="false" selection-start-line="381" selection-start-column="5" selection-end-line="381" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Uuidable.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Traits/Uuidable.php">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#59#339#0#PHP" expanded="false" />
-                <element signature="e#85#254#0#PHP" expanded="false" />
-                <element signature="e#153#247#0#PHP" expanded="false" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-              <folding>
-                <element signature="e#44#78#0#PHP" expanded="true" />
-                <element signature="e#713#870#0#PHP" expanded="false" />
-              </folding>
+            <state relative-caret-position="426">
+              <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserResource.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserResource.php">
+      <file leaf-file-name="navbar.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/general-includes/navbar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="152">
+              <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="605">
+              <caret line="18" column="79" lean-forward="false" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/users/show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,14 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/local-script.sh" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/Auth/RegisterTest.php" />
-        <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/tailwind.js" />
         <option value="$PROJECT_DIR$/resources/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/resources/css/main.css" />
@@ -175,17 +146,13 @@
         <option value="$PROJECT_DIR$/tests/Unit/Http/Requests/SpeciesRequestTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/SpecieController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Web/SpeciesController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Web/SpeciesTest.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/species/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/database/seeds/SpeciesSeeder.php" />
         <option value="$PROJECT_DIR$/resources/js/views/Species.vue" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/tests/Unit/Models/UserTest.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/UserResource.php" />
@@ -196,6 +163,18 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/app/Traits/Uuidable.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Web/UsersTest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Web/UserController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/general-includes/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/users/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/StatusIcon.vue" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/js/views/Users.vue" />
+        <option value="$PROJECT_DIR$/resources/js/components/Modal.vue" />
       </list>
     </option>
   </component>
@@ -239,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,46 +229,33 @@
             <path>
               <item name="petify" type="b2602c69:ProjectViewProjectNode" />
               <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="petify" type="b2602c69:ProjectViewProjectNode" />
               <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="petify" type="b2602c69:ProjectViewProjectNode" />
               <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="petify" type="b2602c69:ProjectViewProjectNode" />
               <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Unit" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="petify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Unit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="petify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Unit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Requests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,7 +263,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/phpunit.xml" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="SearchEverywhereHistoryKey" value="UserReq&#9;null&#9;null&#10;UserFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/UserFactory.php&#10;UserTe&#9;null&#9;null&#10;UserCon&#9;null&#9;null&#10;api&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php&#10;home&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/resources/views/home.blade.php&#10;SpeciesController&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/web.php&#10;SpecReq&#9;null&#9;null&#10;SpecFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/SpecieFactory.php&#10;SpecieController&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Api/SpecieController.php&#10;api.&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php&#10;RegiCo&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Auth/RegisterController.php&#10;User.php&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/User.php&#10;RegiCon&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/resources/views/layouts/app.blade.php&#10;UserTypeController&#9;null&#9;null&#10;api.ph&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php" />
+    <property name="SearchEverywhereHistoryKey" value="UserController&#9;null&#9;null&#10;web.p&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/web.php&#10;UserReq&#9;null&#9;null&#10;UserFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/UserFactory.php&#10;UserTe&#9;null&#9;null&#10;UserCon&#9;null&#9;null&#10;api&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php&#10;home&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/resources/views/home.blade.php&#10;SpeciesController&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/web.php&#10;SpecReq&#9;null&#9;null&#10;SpecFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/SpecieFactory.php&#10;SpecieController&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Api/SpecieController.php&#10;api.&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php&#10;RegiCo&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Auth/RegisterController.php&#10;User.php&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/User.php&#10;RegiCon&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/resources/views/layouts/app.blade.php&#10;UserTypeController&#9;null&#9;null&#10;api.ph&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -322,36 +289,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.UsersTest.soft_delete_a_user">
-    <configuration name="UserRequestTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\Http\Requests\UserRequestTest" file="$PROJECT_DIR$/tests/Unit/Http/Requests/UserRequestTest.php" scope="Class" />
-    </configuration>
-    <configuration name="UserRequestTest.password_must_be_at_least_6_characters_long" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\Http\Requests\UserRequestTest" file="$PROJECT_DIR$/tests/Unit/Http/Requests/UserRequestTest.php" method="password_must_be_at_least_6_characters_long" scope="Method" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.UsersTest.authenticated_user_can_visit_a_user_profile">
     <configuration name="UsersTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Api\UsersTest" file="$PROJECT_DIR$/tests/Feature/Api/UsersTest.php" scope="Class" />
+    </configuration>
+    <configuration name="UsersTest.authenticated_user_can_visit_a_user_profile" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Web\UsersTest" file="$PROJECT_DIR$/tests/Feature/Web/UsersTest.php" method="authenticated_user_can_visit_a_user_profile" scope="Method" />
+    </configuration>
+    <configuration name="UsersTest.authenticated_user_can_visit_users_index" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Web\UsersTest" file="$PROJECT_DIR$/tests/Feature/Web/UsersTest.php" method="authenticated_user_can_visit_users_index" scope="Method" />
+    </configuration>
+    <configuration name="UsersTest.guest_can_not_visit_users_index" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Web\UsersTest" file="$PROJECT_DIR$/tests/Feature/Web/UsersTest.php" method="guest_can_not_visit_users_index" scope="Method" />
     </configuration>
     <configuration name="UsersTest.soft_delete_a_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Api\UsersTest" file="$PROJECT_DIR$/tests/Feature/Api/UsersTest.php" method="soft_delete_a_user" scope="Method" />
     </configuration>
-    <configuration name="UsersTest.update_a_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Api\UsersTest" file="$PROJECT_DIR$/tests/Feature/Api/UsersTest.php" method="update_a_user" scope="Method" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHPUnit.UserRequestTest.password_must_be_at_least_6_characters_long" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.UserRequestTest" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.UsersTest.update_a_user" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.UsersTest" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.UsersTest.soft_delete_a_user" />
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.UsersTest" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.UsersTest.soft_delete_a_user" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.UsersTest.guest_can_not_visit_users_index" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.UsersTest.authenticated_user_can_visit_users_index" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.UsersTest.authenticated_user_can_visit_a_user_profile" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.UsersTest.soft_delete_a_user" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.UsersTest" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.UsersTest.update_a_user" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.UserRequestTest" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.UserRequestTest.password_must_be_at_least_6_characters_long" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.UsersTest.authenticated_user_can_visit_a_user_profile" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.UsersTest.authenticated_user_can_visit_users_index" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.UsersTest.guest_can_not_visit_users_index" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.UsersTest.soft_delete_a_user" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.UsersTest" />
       </list>
     </recent_temporary>
   </component>
@@ -373,50 +340,51 @@
       <workItem from="1561225987925" duration="65000" />
       <workItem from="1561272808243" duration="4574000" />
       <workItem from="1561776947933" duration="3090000" />
-      <workItem from="1561783266774" duration="5065000" />
+      <workItem from="1561783266774" duration="5645000" />
+      <workItem from="1561922737275" duration="1675000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserRequestTest - 2019.06.28 at 22h 46m 00s.xml">
-      <configuration name="UserRequestTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_authenticated_user_can_visit_a_user_profile - 2019.06.30 at 12h 47m 01s.xml">
+      <configuration name="UsersTest.authenticated_user_can_visit_a_user_profile" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UserRequestTest_password_must_be_at_least_6_characters_long - 2019.06.28 at 22h 44m 29s.xml">
-      <configuration name="UserRequestTest.password_must_be_at_least_6_characters_long" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_authenticated_user_can_visit_a_user_profile - 2019.06.30 at 12h 47m 18s.xml">
+      <configuration name="UsersTest.authenticated_user_can_visit_a_user_profile" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UsersTest - 2019.06.28 at 22h 46m 19s.xml">
-      <configuration name="UsersTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_authenticated_user_can_visit_a_user_profile - 2019.06.30 at 12h 47m 28s.xml">
+      <configuration name="UsersTest.authenticated_user_can_visit_a_user_profile" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UsersTest_soft_delete_a_user - 2019.06.28 at 22h 47m 14s.xml">
-      <configuration name="UsersTest.soft_delete_a_user" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_authenticated_user_can_visit_a_user_profile - 2019.06.30 at 12h 48m 23s.xml">
+      <configuration name="UsersTest.authenticated_user_can_visit_a_user_profile" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UsersTest_soft_delete_a_user - 2019.06.28 at 22h 47m 34s.xml">
-      <configuration name="UsersTest.soft_delete_a_user" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_authenticated_user_can_visit_users_index - 2019.06.30 at 12h 43m 33s.xml">
+      <configuration name="UsersTest.authenticated_user_can_visit_users_index" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UsersTest_soft_delete_a_user - 2019.06.28 at 22h 48m 00s.xml">
-      <configuration name="UsersTest.soft_delete_a_user" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_authenticated_user_can_visit_users_index - 2019.06.30 at 12h 44m 20s.xml">
+      <configuration name="UsersTest.authenticated_user_can_visit_users_index" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UsersTest_soft_delete_a_user - 2019.06.28 at 22h 48m 39s.xml">
-      <configuration name="UsersTest.soft_delete_a_user" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_authenticated_user_can_visit_users_index - 2019.06.30 at 12h 46m 18s.xml">
+      <configuration name="UsersTest.authenticated_user_can_visit_users_index" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UsersTest_soft_delete_a_user - 2019.06.28 at 22h 52m 49s.xml">
-      <configuration name="UsersTest.soft_delete_a_user" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_guest_can_not_visit_users_index - 2019.06.30 at 12h 43m 13s.xml">
+      <configuration name="UsersTest.guest_can_not_visit_users_index" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UsersTest_soft_delete_a_user - 2019.06.28 at 22h 53m 28s.xml">
-      <configuration name="UsersTest.soft_delete_a_user" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_guest_can_not_visit_users_index - 2019.06.30 at 12h 43m 18s.xml">
+      <configuration name="UsersTest.guest_can_not_visit_users_index" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UsersTest_update_a_user - 2019.06.28 at 22h 46m 13s.xml">
-      <configuration name="UsersTest.update_a_user" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UsersTest_guest_can_not_visit_users_index - 2019.06.30 at 12h 43m 22s.xml">
+      <configuration name="UsersTest.guest_can_not_visit_users_index" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27124000" />
+    <option name="totallyTimeSpent" value="29379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="757" width="1841" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.211528" sideWeight="0.49272552" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.211528" sideWeight="0.49272552" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -467,66 +435,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tailwind.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/UserType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="e#25#45#0#PHP" expanded="false" />
-            <element signature="e#555#687#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Auth/LoginTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UserTypeSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -587,9 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#66#89#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,19 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="485">
-            <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Web/SpeciesController.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Web/SpeciesController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -660,13 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
           <caret line="27" column="64" lean-forward="false" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Modal.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -708,32 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="90" column="66" lean-forward="false" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -755,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-          <folding>
-            <element signature="e#37#56#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,31 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="e#305#758#0#PHP" expanded="false" />
-            <element signature="e#1374#1738#0#PHP" expanded="false" />
-            <element signature="e#1859#2395#0#PHP" expanded="false" />
-            <element signature="e#2519#2785#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding>
-            <element signature="e#44#78#0#PHP" expanded="true" />
-            <element signature="e#713#870#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,29 +655,13 @@
         <state relative-caret-position="413">
           <caret line="237" column="4" lean-forward="true" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
           <folding>
-            <element signature="e#44#63#0#PHP" expanded="true" />
+            <element signature="e#44#63#0#PHP" expanded="false" />
             <element signature="e#1098#1311#0#PHP" expanded="false" />
             <element signature="e#6030#6196#0#PHP" expanded="false" />
             <element signature="e#6362#6532#0#PHP" expanded="false" />
             <element signature="e#6608#7200#0#PHP" expanded="false" />
             <element signature="e#7269#7820#0#PHP" expanded="false" />
             <element signature="e#7328#7545#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Api/UsersTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="122" column="12" lean-forward="false" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
-          <folding>
-            <element signature="e#37#56#0#PHP" expanded="true" />
-            <element signature="e#326#1075#0#PHP" expanded="false" />
-            <element signature="e#1185#2039#0#PHP" expanded="false" />
-            <element signature="e#1287#1720#0#PHP" expanded="false" />
-            <element signature="e#2155#2500#0#PHP" expanded="false" />
-            <element signature="e#2616#3415#0#PHP" expanded="false" />
-            <element signature="e#3534#3782#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -862,7 +679,7 @@
         <state relative-caret-position="660">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <element signature="e#30#54#0#PHP" expanded="true" />
+            <element signature="e#30#54#0#PHP" expanded="false" />
             <element signature="e#801#919#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -877,6 +694,157 @@
             <element signature="e#85#254#0#PHP" expanded="false" />
             <element signature="e#153#247#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="742">
+            <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-316">
+          <caret line="46" column="58" lean-forward="false" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Api/UsersTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="116" column="4" lean-forward="true" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+          <folding>
+            <element signature="e#37#56#0#PHP" expanded="false" />
+            <element signature="e#326#1075#0#PHP" expanded="false" />
+            <element signature="e#1185#2039#0#PHP" expanded="false" />
+            <element signature="e#1287#1720#0#PHP" expanded="false" />
+            <element signature="e#2155#2500#0#PHP" expanded="false" />
+            <element signature="e#2616#3415#0#PHP" expanded="false" />
+            <element signature="e#3534#3782#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding>
+            <element signature="e#44#78#0#PHP" expanded="false" />
+            <element signature="e#713#870#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Web/UsersTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#258#459#0#PHP" expanded="false" />
+            <element signature="e#528#769#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/UserResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Web/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="e#44#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="18" column="79" lean-forward="false" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/general-includes/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/StatusIcon.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Modal.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="80" column="5" lean-forward="false" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <element signature="n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/views/Users.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="381" column="5" lean-forward="false" selection-start-line="381" selection-start-column="5" selection-end-line="381" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

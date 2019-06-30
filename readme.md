@@ -47,3 +47,5 @@ Main logo does not belong to me, it is being used as a placeholder and
 will be removed as soon as the project reaches enough maturity to define
 it's own logo.
 Extracted from dribbble.com.
+
+MIT License

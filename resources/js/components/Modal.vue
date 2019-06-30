@@ -74,3 +74,9 @@
         },
     }
 </script>
+
+<style scoped>
+    .required {
+        color: red;
+    }
+</style>
