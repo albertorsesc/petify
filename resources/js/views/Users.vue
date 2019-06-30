@@ -185,6 +185,7 @@
     import Requests from '../models/Requests'
     import SweetAlert from '../models/SweetAlert'
     import Modal from '../components/Modal'
+    import StatusIcon from '../components/StatusIcon'
 
     export default {
         data() {
@@ -282,7 +283,6 @@
                     )
             },
             toggleStatus(user) {
-                this.user = user
                 Requests
                     .update(
                         this.usersUrl,
@@ -290,7 +290,7 @@
                         { 'status': ! user.status },
                         () => {
                             this.index()
-                            let status = this.user.status ? 'Desactivado' : 'Activado'
+                            let status = user.status ? 'Desactivado' : 'Activado'
                             SweetAlert.success(`El Estatus del Usuario ha sido ${status} exitosamente!`)
                         },
                         error => {
@@ -371,6 +371,7 @@
         },
         components: {
             Modal,
+            StatusIcon,
         },
     }
 </script>

@@ -2,6 +2,7 @@
 
 namespace Tests\Unit\Http\Requests;
 
+use Illuminate\Support\Arr;
 use Tests\TestCase;
 use App\Models\User;
 use Illuminate\Support\Str;
@@ -250,12 +251,12 @@ class UserRequestTest extends TestCase
             ]
         )->assertJsonValidationErrors('password');
         
-        /*$this->putJson(
+        $this->putJson(
             route('users.update', $this->create(User::class)),
             [
                 'password' => 'secret',
                 'password_confirmation' => null,
             ]
-        )->assertJsonValidationErrors('password');*/
+        )->assertJsonValidationErrors('password');
     }
 }
