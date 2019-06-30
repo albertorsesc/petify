@@ -6,5 +6,6 @@ Route::namespace('Api')->group(function () {
     Route::apiResource('users', 'UserController');
     
     Route::apiResource('species', 'SpecieController');
+    Route::apiResource('breeds', 'BreedController');
 
 });

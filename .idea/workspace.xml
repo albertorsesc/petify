@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1666422-345d-41f9-b8eb-c01ae2b0142b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/SpeciesRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/SpeciesRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Resources/SpeciesResource.php" afterPath="$PROJECT_DIR$/app/Http/Resources/SpeciesResource.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Species.php" afterPath="$PROJECT_DIR$/app/Models/Species.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/SpeciesFactory.php" afterPath="$PROJECT_DIR$/database/factories/SpeciesFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2019_06_25_050357_create_species_table.php" afterPath="$PROJECT_DIR$/database/migrations/2019_06_25_050357_create_species_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/SpeciesSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/SpeciesSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php" afterPath="$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Unit/Http/Requests/SpeciesRequestTest.php" afterPath="$PROJECT_DIR$/tests/Unit/Http/Requests/SpeciesRequestTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +15,74 @@
     <favorites_list name="petify" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BreedsTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <folding>
+                <element signature="e#37#56#0#PHP" expanded="true" />
+                <element signature="e#301#800#0#PHP" expanded="false" />
+                <element signature="e#515#792#1#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Breed.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Breed.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BreedController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="605">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="e#44#65#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpecieController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/SpecieController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpeciesSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/SpeciesSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,13 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/seeds/UserSeeder.php" />
-        <option value="$PROJECT_DIR$/config/auth.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/database/factories/SpecieFactory.php" />
-        <option value="$PROJECT_DIR$/tests/Unit/Http/Requests/SpecieRequestTest.php" />
         <option value="$PROJECT_DIR$/app/Models/Specie.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/SpecieResource.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/SpecieRequest.php" />
@@ -50,7 +101,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/resources/js/views/Species.vue" />
         <option value="$PROJECT_DIR$/tests/Unit/Models/UserTest.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
         <option value="$PROJECT_DIR$/readme.md" />
@@ -83,6 +133,14 @@
         <option value="$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php" />
         <option value="$PROJECT_DIR$/tests/Unit/Http/Requests/SpeciesRequestTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/SpeciesRequest.php" />
+        <option value="$PROJECT_DIR$/database/factories/BreedFactory.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/Models/BreedTest.php" />
+        <option value="$PROJECT_DIR$/app/Models/Breed.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Resources/BreedResource.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_30_212749_create_breeds_table.php" />
       </list>
     </option>
   </component>
@@ -134,6 +192,24 @@
               <item name="petify" type="b2602c69:ProjectViewProjectNode" />
               <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="petify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="petify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Unit" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="petify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="petify" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Unit" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -146,7 +222,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/phpunit.xml" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="SearchEverywhereHistoryKey" value="SpeReq&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Requests/SpeciesRequest.php&#10;SpeFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/SpeciesFactory.php&#10;SpeRes&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Resources/SpeciesResource.php&#10;UserCOn&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Web/UserController.php&#10;UsersTe&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/tests/Feature/Api/UsersTest.php&#10;UseRT&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/tests/Unit/Http/Requests/UserRequestTest.php&#10;UserResou&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Resources/UserResource.php&#10;UserController&#9;null&#9;null&#10;web.p&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/web.php&#10;UserReq&#9;null&#9;null&#10;UserFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/UserFactory.php&#10;UserTe&#9;null&#9;null&#10;UserCon&#9;null&#9;null&#10;api&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php&#10;home&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/resources/views/home.blade.php&#10;SpeciesController&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/web.php&#10;SpecReq&#9;null&#9;null&#10;SpecFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/SpecieFactory.php&#10;SpecieController&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Api/SpecieController.php&#10;api.&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php&#10;RegiCo&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Auth/RegisterController.php&#10;User.php&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/User.php&#10;RegiCon&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/resources/views/layouts/app.blade.php&#10;UserTypeController&#9;null&#9;null&#10;api.ph&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php" />
+    <property name="SearchEverywhereHistoryKey" value="SpeCon&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Api/SpecieController.php&#10;BreedController&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Api/BreedController.php&#10;api/&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php&#10;bree_tab&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/migrations/2019_06_30_212749_create_breeds_table.php&#10;SpeReq&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Requests/SpeciesRequest.php&#10;SpeFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/SpeciesFactory.php&#10;SpeRes&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Resources/SpeciesResource.php&#10;UserCOn&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Web/UserController.php&#10;UsersTe&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/tests/Feature/Api/UsersTest.php&#10;UseRT&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/tests/Unit/Http/Requests/UserRequestTest.php&#10;UserResou&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Resources/UserResource.php&#10;UserController&#9;null&#9;null&#10;web.p&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/web.php&#10;UserReq&#9;null&#9;null&#10;UserFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/UserFactory.php&#10;UserTe&#9;null&#9;null&#10;UserCon&#9;null&#9;null&#10;api&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php&#10;home&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/resources/views/home.blade.php&#10;SpeciesController&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/web.php&#10;SpecReq&#9;null&#9;null&#10;SpecFac&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/database/factories/SpecieFactory.php&#10;SpecieController&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Api/SpecieController.php&#10;api.&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php&#10;RegiCo&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/Http/Controllers/Auth/RegisterController.php&#10;User.php&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/app/User.php&#10;RegiCon&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/resources/views/layouts/app.blade.php&#10;UserTypeController&#9;null&#9;null&#10;api.ph&#9;FILE&#9;file:///home/bcrypt/Repositories/petify/routes/api.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -157,8 +233,9 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/js/components" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
       <recent name="$PROJECT_DIR$/app/Models" />
+      <recent name="$PROJECT_DIR$/resources/js/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -173,36 +250,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.SpeciesTest">
+  <component name="RunManager" selected="PHPUnit.BreedsTest">
+    <configuration name="BreedTest.breed_belongs_to_a_specie" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Models\BreedTest" file="$PROJECT_DIR$/tests/Unit/Models/BreedTest.php" method="breed_belongs_to_a_specie" scope="Method" />
+    </configuration>
+    <configuration name="BreedsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Api\BreedsTest" file="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" scope="Class" />
+    </configuration>
+    <configuration name="BreedsTest.get_all_breeds" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Api\BreedsTest" file="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" method="get_all_breeds" scope="Method" />
+    </configuration>
     <configuration name="SpeciesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Api\SpeciesTest" file="$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php" scope="Class" />
-    </configuration>
-    <configuration name="SpeciesTest.get_all_species" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Api\SpeciesTest" file="$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php" method="get_all_species" scope="Method" />
     </configuration>
     <configuration name="SpeciesTest.store_a_specie" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Api\SpeciesTest" file="$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php" method="store_a_specie" scope="Method" />
     </configuration>
-    <configuration name="UserRequestTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\Http\Requests\UserRequestTest" file="$PROJECT_DIR$/tests/Unit/Http/Requests/UserRequestTest.php" scope="Class" />
-    </configuration>
-    <configuration name="UserRequestTest.password_must_be_confirmed" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\Http\Requests\UserRequestTest" file="$PROJECT_DIR$/tests/Unit/Http/Requests/UserRequestTest.php" method="password_must_be_confirmed" scope="Method" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHPUnit.UserRequestTest" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.UserRequestTest.password_must_be_confirmed" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest.get_all_species" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest.store_a_specie" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest" />
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest.store_a_specie" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.get_all_breeds" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.BreedTest.breed_belongs_to_a_specie" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.BreedsTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest.store_a_specie" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest.get_all_species" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.UserRequestTest.password_must_be_confirmed" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.UserRequestTest" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.BreedsTest" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.get_all_breeds" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.BreedTest.breed_belongs_to_a_specie" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.SpeciesTest.store_a_specie" />
       </list>
     </recent_temporary>
   </component>
@@ -225,49 +302,50 @@
       <workItem from="1561272808243" duration="4574000" />
       <workItem from="1561776947933" duration="3090000" />
       <workItem from="1561783266774" duration="5645000" />
-      <workItem from="1561922737275" duration="6451000" />
+      <workItem from="1561922737275" duration="8985000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpeciesTest - 2019.06.30 at 14h 16m 14s.xml">
-      <configuration name="SpeciesTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedTest_breed_belongs_to_a_specie - 2019.06.30 at 15h 07m 15s.xml">
+      <configuration name="BreedTest.breed_belongs_to_a_specie" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SpeciesTest_get_all_species - 2019.06.30 at 14h 13m 18s.xml">
-      <configuration name="SpeciesTest.get_all_species" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedTest_breed_belongs_to_a_specie - 2019.06.30 at 15h 07m 39s.xml">
+      <configuration name="BreedTest.breed_belongs_to_a_specie" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SpeciesTest_store_a_specie - 2019.06.30 at 14h 13m 55s.xml">
-      <configuration name="SpeciesTest.store_a_specie" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest - 2019.06.30 at 15h 11m 07s.xml">
+      <configuration name="BreedsTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SpeciesTest_store_a_specie - 2019.06.30 at 14h 14m 15s.xml">
-      <configuration name="SpeciesTest.store_a_specie" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.06.30 at 15h 05m 26s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SpeciesTest_store_a_specie - 2019.06.30 at 14h 15m 01s.xml">
-      <configuration name="SpeciesTest.store_a_specie" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.06.30 at 15h 07m 48s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SpeciesTest_store_a_specie - 2019.06.30 at 14h 15m 22s.xml">
-      <configuration name="SpeciesTest.store_a_specie" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.06.30 at 15h 08m 07s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="SpeciesTest_store_a_specie - 2019.06.30 at 14h 16m 00s.xml">
-      <configuration name="SpeciesTest.store_a_specie" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.06.30 at 15h 08m 36s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UserRequestTest - 2019.06.30 at 13h 53m 46s.xml">
-      <configuration name="UserRequestTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.06.30 at 15h 09m 06s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UserRequestTest_password_must_be_confirmed - 2019.06.30 at 13h 54m 56s.xml">
-      <configuration name="UserRequestTest.password_must_be_confirmed" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.06.30 at 15h 09m 24s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="UsersTest_update_a_user - 2019.06.30 at 13h 53m 35s.xml">
-      <configuration name="UsersTest.update_a_user" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.06.30 at 15h 10m 02s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34155000" />
+    <option name="totallyTimeSpent" value="36689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="757" width="1841" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.211528" sideWeight="0.49272552" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.211528" sideWeight="0.49272552" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -318,63 +396,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4125">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="70" column="46" lean-forward="false" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2805">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/SpecieController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_04_24_051416_create_user_types_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Web/SpeciesController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Web/SpeciesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Web/SpeciesTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
@@ -439,14 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -579,22 +592,6 @@
             <element signature="e#1126#1244#0#PHP" expanded="false" />
             <element signature="e#1292#1389#0#PHP" expanded="false" />
             <element signature="e#1399#1484#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Api/UsersTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="91" column="35" lean-forward="false" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
-          <folding>
-            <element signature="e#326#1075#0#PHP" expanded="false" />
-            <element signature="e#535#1067#1#PHP" expanded="false" />
-            <element signature="e#1185#1996#0#PHP" expanded="false" />
-            <element signature="e#1287#1677#0#PHP" expanded="false" />
-            <element signature="e#2112#2457#0#PHP" expanded="false" />
-            <element signature="e#2573#3329#0#PHP" expanded="false" />
-            <element signature="e#3448#3696#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -748,14 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SpeciesSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/SpeciesRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -777,14 +766,128 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="88" column="4" lean-forward="true" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+        <state relative-caret-position="493">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="e#305#697#0#PHP" expanded="false" />
             <element signature="e#809#1192#0#PHP" expanded="false" />
             <element signature="e#1313#1677#0#PHP" expanded="false" />
             <element signature="e#1798#2334#0#PHP" expanded="false" />
             <element signature="e#2458#2724#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Api/UsersTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="91" column="35" lean-forward="false" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
+          <folding>
+            <element signature="e#326#1075#0#PHP" expanded="false" />
+            <element signature="e#535#1067#1#PHP" expanded="false" />
+            <element signature="e#1185#1996#0#PHP" expanded="false" />
+            <element signature="e#1287#1677#0#PHP" expanded="false" />
+            <element signature="e#2112#2457#0#PHP" expanded="false" />
+            <element signature="e#2573#3329#0#PHP" expanded="false" />
+            <element signature="e#3448#3696#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/SpeciesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Web/SpeciesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Models/BreedTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+          <folding>
+            <element signature="e#37#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Breed.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Resources/BreedResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_30_212749_create_breeds_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="20" column="74" lean-forward="false" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/BreedFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding>
+            <element signature="e#66#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/SpecieController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#44#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <element signature="e#37#56#0#PHP" expanded="true" />
+            <element signature="e#301#800#0#PHP" expanded="false" />
+            <element signature="e#515#792#1#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
