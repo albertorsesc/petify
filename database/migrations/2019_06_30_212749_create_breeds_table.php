@@ -16,7 +16,7 @@ class CreateBreedsTable extends Migration
         Schema::create('breeds', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('specie_id');
-            $table->string('name');
+            $table->string('name', 100);
             
             $table->foreign('specie_id')->references('id')->on('species');
         });

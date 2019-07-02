@@ -24,5 +24,11 @@ class BreedController extends Controller
         return new BreedResource($breed);
     }
     
+    public function update(BreedRequest $request, Breed $breed)
+    {
+        $breed->update($request->all());
+        
+        return new BreedResource($breed);
+    }
     
 }

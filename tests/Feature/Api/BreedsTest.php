@@ -55,7 +55,7 @@ class BreedsTest extends TestCase
      *   @throws \Throwable
      *  @endpoint ['GET', '/api/breeds/{breed}']
      */
-    public function get_a_breeds()
+    public function get_a_breed()
     {
         $breed = $this->create(Breed::class);
         
@@ -70,5 +70,27 @@ class BreedsTest extends TestCase
                 'name' => $breed->name,
             ]
         ]);
+    }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['PUT', '/api/breeds/{breed}']
+     */
+    public function update_a_breed()
+    {
+        $breed = $this->create(Breed::class);
+        $breedData = $this->make(Breed::class);
+
+        $response = $this->putJson(route('breeds.update', $breed), $breedData->toArray());
+        $response->assertStatus(200);
+        $response->assertJson([
+            'data' => [
+                'id' => $breed->id,
+                'name' => $breedData->name,
+            ]
+        ]);
+        
+        $this->assertDatabaseHas('breeds', $breedData->toArray());
     }
 }

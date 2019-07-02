@@ -25,6 +25,7 @@ class BreedRequest extends FormRequest
     {
         return [
             'specie_id' => ['required', 'exists:species,id'],
+            'name' => ['required', 'max:100']
         ];
     }
 }
