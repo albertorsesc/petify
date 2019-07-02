@@ -93,4 +93,18 @@ class BreedsTest extends TestCase
         
         $this->assertDatabaseHas('breeds', $breedData->toArray());
     }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['DELETE', '/api/breeds/{breed}']
+     */
+    public function delete_a_breed()
+    {
+        $breed = $this->create(Breed::class);
+        
+        $this->deleteJson(route('breeds.destroy', $breed))->assertStatus(204);
+        
+        $this->assertSoftDeleted('breeds', $breed->toArray());
+    }
 }

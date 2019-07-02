@@ -31,4 +31,12 @@ class BreedController extends Controller
         return new BreedResource($breed);
     }
     
+    public function destroy(Breed $breed)
+    {
+        $breed->delete();
+        
+        return response([], 204);
+    }
+    
+    
 }

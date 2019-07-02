@@ -17,6 +17,7 @@ class CreateBreedsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('specie_id');
             $table->string('name', 100);
+            $table->softDeletes();
             
             $table->foreign('specie_id')->references('id')->on('species');
         });
