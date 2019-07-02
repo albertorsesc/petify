@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Breed;
-use Illuminate\Http\Request;
+use App\Http\Requests\BreedRequest;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\BreedResource;
 
@@ -13,4 +13,10 @@ class BreedController extends Controller
     {
         return BreedResource::collection(Breed::with('specie')->orderBy('name')->get());
     }
+    
+    public function store(BreedRequest $request)
+    {
+        return new BreedResource(Breed::create($request->all()));
+    }
+    
 }

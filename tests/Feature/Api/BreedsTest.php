@@ -33,4 +33,20 @@ class BreedsTest extends TestCase
             ]
         ]);
     }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['POST', '/api/breeds']
+     */
+    public function store_a_breed()
+    {
+        $breedData = $this->make(Breed::class);
+        
+        $response = $this->postJson(route('breeds.store'), $breedData->toArray());
+        $response->assertStatus(201);
+        $response->assertJson(['data' => ['name' => $breedData->name]]);
+        
+        $this->assertDatabaseHas('breeds', $breedData->toArray());
+    }
 }
