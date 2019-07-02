@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class SpeciesResource extends JsonResource
+class BreedResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,6 +16,7 @@ class SpeciesResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'specie' => new SpeciesResource($this->whenLoaded('specie')),
             'name' => $this->name,
         ];
     }

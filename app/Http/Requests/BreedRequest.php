@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class SpeciesRequest extends FormRequest
+class BreedRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,8 @@ class SpeciesRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required'],
+            'specie_id' => ['required', 'exists:species,id'],
+            'name' => ['required', 'max:100']
         ];
     }
 }
