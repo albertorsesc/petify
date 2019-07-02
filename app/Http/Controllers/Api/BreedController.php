@@ -11,12 +11,18 @@ class BreedController extends Controller
 {
     public function index()
     {
-        return BreedResource::collection(Breed::with('specie')->orderBy('name')->get());
+        return BreedResource::collection(Breed::orderBy('name')->get());
     }
     
     public function store(BreedRequest $request)
     {
         return new BreedResource(Breed::create($request->all()));
     }
+    
+    public function show(Breed $breed)
+    {
+        return new BreedResource($breed);
+    }
+    
     
 }

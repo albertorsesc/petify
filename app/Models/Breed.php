@@ -8,6 +8,7 @@ class Breed extends Model
 {
     public $timestamps = false;
     protected $fillable = ['specie_id', 'name'];
+    protected $with = ['specie'];
     
     /** Relations */
     

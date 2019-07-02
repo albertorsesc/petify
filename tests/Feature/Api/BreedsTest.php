@@ -49,4 +49,26 @@ class BreedsTest extends TestCase
         
         $this->assertDatabaseHas('breeds', $breedData->toArray());
     }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['GET', '/api/breeds/{breed}']
+     */
+    public function get_a_breeds()
+    {
+        $breed = $this->create(Breed::class);
+        
+        $response = $this->getJson(route('breeds.show', $breed));
+        $response->assertOk();
+        $response->assertJson([
+            'data' => [
+                'id' => $breed->id,
+                'specie' => [
+                    'id' => $breed->specie->id,
+                ],
+                'name' => $breed->name,
+            ]
+        ]);
+    }
 }

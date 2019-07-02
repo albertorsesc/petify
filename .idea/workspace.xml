@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1666422-345d-41f9-b8eb-c01ae2b0142b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Breed.php" afterPath="$PROJECT_DIR$/app/Models/Breed.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" afterPath="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,26 +18,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BreedsTest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BreedsTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+            <state relative-caret-position="248">
+              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
               <folding>
                 <element signature="e#37#56#0#PHP" expanded="true" />
                 <element signature="e#301#800#0#PHP" expanded="false" />
+                <element signature="e#493#793#0#PHP" expanded="false" />
+                <element signature="e#515#792#1#PHP" expanded="false" />
+                <element signature="e#539#782#1#PHP" expanded="false" />
+                <element signature="e#557#768#1#PHP" expanded="false" />
+                <element signature="e#631#705#1#PHP" expanded="false" />
                 <element signature="e#911#1281#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BreedRequestTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BreedRequestTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/Http/Requests/BreedRequestTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="-27">
+              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
+                <element signature="e#44#63#0#PHP" expanded="true" />
                 <element signature="e#270#487#0#PHP" expanded="false" />
                 <element signature="e#556#1038#0#PHP" expanded="false" />
               </folding>
@@ -60,8 +64,8 @@
       <file leaf-file-name="SpeciesTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="46" column="5" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+            <state relative-caret-position="273">
+              <caret line="65" column="5" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
               <folding>
                 <element signature="e#305#697#0#PHP" expanded="false" />
                 <element signature="e#809#1192#0#PHP" expanded="false" />
@@ -76,8 +80,8 @@
       <file leaf-file-name="Breed.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Breed.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="495">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -96,9 +100,11 @@
       <file leaf-file-name="BreedController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="715">
+              <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+              <folding>
+                <element signature="e#44#65#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,10 +112,11 @@
       <file leaf-file-name="SpecieController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/SpecieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="523">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#362#490#0#PHP" expanded="false" />
+                <element signature="e#500#596#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -179,11 +186,11 @@
         <option value="$PROJECT_DIR$/tests/Unit/Models/BreedTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Resources/BreedResource.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_30_212749_create_breeds_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Breed.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/BreedRequest.php" />
         <option value="$PROJECT_DIR$/tests/Unit/Http/Requests/BreedRequestTest.php" />
+        <option value="$PROJECT_DIR$/app/Models/Breed.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" />
       </list>
     </option>
   </component>
@@ -308,15 +315,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.BreedRequestTest">
+  <component name="RunManager" selected="PHPUnit.BreedsTest">
     <configuration name="BreedRequestTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\Http\Requests\BreedRequestTest" file="$PROJECT_DIR$/tests/Unit/Http/Requests/BreedRequestTest.php" scope="Class" />
     </configuration>
-    <configuration name="BreedRequestTest.specie_id_must_exits_in_species_table" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\Http\Requests\BreedRequestTest" file="$PROJECT_DIR$/tests/Unit/Http/Requests/BreedRequestTest.php" method="specie_id_must_exits_in_species_table" scope="Method" />
+    <configuration name="BreedsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Api\BreedsTest" file="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" scope="Class" />
     </configuration>
-    <configuration name="BreedRequestTest.species_id_is_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\Http\Requests\BreedRequestTest" file="$PROJECT_DIR$/tests/Unit/Http/Requests/BreedRequestTest.php" method="species_id_is_required" scope="Method" />
+    <configuration name="BreedsTest.get_a_breeds" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Api\BreedsTest" file="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" method="get_a_breeds" scope="Method" />
     </configuration>
     <configuration name="BreedsTest.get_all_breeds" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Api\BreedsTest" file="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" method="get_all_breeds" scope="Method" />
@@ -325,19 +332,19 @@
       <TestRunner class="Tests\Feature\Api\BreedsTest" file="$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php" method="store_a_breed" scope="Method" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.get_all_breeds" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.store_a_breed" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.BreedRequestTest.species_id_is_required" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.BreedRequestTest.specie_id_must_exits_in_species_table" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.BreedRequestTest" />
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.store_a_breed" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.BreedRequestTest" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.get_a_breeds" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.BreedsTest" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.get_all_breeds" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.BreedRequestTest" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.BreedRequestTest.specie_id_must_exits_in_species_table" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.BreedsTest" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.get_all_breeds" />
         <item index="2" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.store_a_breed" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.BreedRequestTest.species_id_is_required" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.get_all_breeds" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.BreedsTest.get_a_breeds" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.BreedRequestTest" />
       </list>
     </recent_temporary>
   </component>
@@ -361,44 +368,44 @@
       <workItem from="1561776947933" duration="3090000" />
       <workItem from="1561783266774" duration="5645000" />
       <workItem from="1561922737275" duration="9584000" />
-      <workItem from="1562045333163" duration="1325000" />
+      <workItem from="1562045333163" duration="1688000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BreedRequestTest - 2019.07.01 at 22h 52m 12s.xml">
-      <configuration name="BreedRequestTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest - 2019.07.01 at 22h 57m 07s.xml">
+      <configuration name="BreedsTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="BreedRequestTest_specie_id_must_exits_in_species_table - 2019.07.01 at 22h 50m 15s.xml">
-      <configuration name="BreedRequestTest.specie_id_must_exits_in_species_table" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest - 2019.07.01 at 22h 58m 21s.xml">
+      <configuration name="BreedsTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="BreedRequestTest_specie_id_must_exits_in_species_table - 2019.07.01 at 22h 50m 50s.xml">
-      <configuration name="BreedRequestTest.specie_id_must_exits_in_species_table" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_a_breeds - 2019.07.01 at 22h 57m 14s.xml">
+      <configuration name="BreedsTest.get_a_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="BreedRequestTest_specie_id_must_exits_in_species_table - 2019.07.01 at 22h 51m 20s.xml">
-      <configuration name="BreedRequestTest.specie_id_must_exits_in_species_table" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_a_breeds - 2019.07.01 at 22h 57m 15s.xml">
+      <configuration name="BreedsTest.get_a_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="BreedRequestTest_species_id_is_required - 2019.07.01 at 22h 46m 50s.xml">
-      <configuration name="BreedRequestTest.species_id_is_required" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_a_breeds - 2019.07.01 at 22h 57m 16s.xml">
+      <configuration name="BreedsTest.get_a_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="BreedRequestTest_species_id_is_required - 2019.07.01 at 22h 47m 31s.xml">
-      <configuration name="BreedRequestTest.species_id_is_required" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.07.01 at 22h 57m 25s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="BreedsTest_store_a_breed - 2019.07.01 at 22h 42m 57s.xml">
-      <configuration name="BreedsTest.store_a_breed" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.07.01 at 22h 57m 32s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="BreedsTest_store_a_breed - 2019.07.01 at 22h 43m 28s.xml">
-      <configuration name="BreedsTest.store_a_breed" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.07.01 at 22h 57m 47s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="BreedsTest_store_a_breed - 2019.07.01 at 22h 44m 23s.xml">
-      <configuration name="BreedsTest.store_a_breed" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="BreedsTest_get_all_breeds - 2019.07.01 at 22h 58m 15s.xml">
+      <configuration name="BreedsTest.get_all_breeds" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="BreedsTest_store_a_breed - 2019.07.01 at 22h 48m 06s.xml">
+    <history-entry file="BreedsTest_store_a_breed - 2019.07.01 at 22h 57m 20s.xml">
       <configuration name="BreedsTest.store_a_breed" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38613000" />
+    <option name="totallyTimeSpent" value="38976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="81" y="764" width="1839" height="1084" extended-state="6" />
@@ -779,60 +786,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Breed.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="495">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Api/SpeciesTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="273">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
           <folding>
             <element signature="e#305#697#0#PHP" expanded="false" />
             <element signature="e#809#1192#0#PHP" expanded="false" />
             <element signature="e#1313#1677#0#PHP" expanded="false" />
             <element signature="e#1798#2334#0#PHP" expanded="false" />
             <element signature="e#2458#2724#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/SpecieController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#362#490#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SpeciesSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-          <folding>
-            <element signature="e#37#56#0#PHP" expanded="true" />
-            <element signature="e#301#800#0#PHP" expanded="false" />
-            <element signature="e#911#1281#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -847,11 +816,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/Http/Requests/BreedRequestTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="-27">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
+            <element signature="e#44#63#0#PHP" expanded="true" />
             <element signature="e#270#487#0#PHP" expanded="false" />
             <element signature="e#556#1038#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BreedController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding>
+            <element signature="e#44#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/SpecieController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#362#490#0#PHP" expanded="false" />
+            <element signature="e#500#596#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/SpeciesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Api/BreedsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="e#37#56#0#PHP" expanded="true" />
+            <element signature="e#301#800#0#PHP" expanded="false" />
+            <element signature="e#493#793#0#PHP" expanded="false" />
+            <element signature="e#515#792#1#PHP" expanded="false" />
+            <element signature="e#539#782#1#PHP" expanded="false" />
+            <element signature="e#557#768#1#PHP" expanded="false" />
+            <element signature="e#631#705#1#PHP" expanded="false" />
+            <element signature="e#911#1281#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
