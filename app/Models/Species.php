@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Species extends Model
 {
-    public $timestamps = false;
-    protected $fillable = ['name'];
+    use SoftDeletes;
+    
+    protected $fillable = ['name', 'status'];
+    protected $casts = ['status' => 'boolean'];
 }

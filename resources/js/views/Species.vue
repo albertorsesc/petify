@@ -22,7 +22,6 @@
                         <th>#</th>
                         <th>ID</th>
                         <th>Name</th>
-                        <th>DisplayName</th>
                         <th>
                             <i class="fa fa-ellipsis-h"></i>
                         </th>
@@ -33,7 +32,6 @@
                         <td v-text="index + 1"></td>
                         <td v-text="specie.id"></td>
                         <td v-text="specie.name"></td>
-                        <td v-text="specie.displayName"></td>
                         <td>
                             <div class="btn-group">
                                 <button type="button"
@@ -41,13 +39,16 @@
                                         class="btn btn-warning btn-xs">
                                     <i class="fa fa-edit"></i>
                                 </button>
-                                <button type="button" @click="onDelete(specie)" class="btn btn-danger btn-xs">
+                                <button @click="toggleStatus(specie)"
+                                        :class="['btn', 'btn-xs', specie.status ? 'bg-grey' : 'btn-success']"
+                                        :title="specie.status ? 'Desactivar' : 'Activar'">
+                                    <i class="fas fa-power-off"></i>
+                                </button>
+                                <button type="button"
+                                        @click="onDelete(specie)"
+                                        class="btn btn-danger btn-xs">
                                     <i class="fa fa-trash"></i>
                                 </button>
-                                <!--<button @click="toggleStatus(specie)"
-                                        :class="['btn', 'btn-xs', toggleStatusClass(specie)]">
-                                    <i class="fas fa-power-off"></i>
-                                </button>-->
                             </div>
                         </td>
                     </tr>
@@ -62,7 +63,7 @@
                 <form @submit.prevent>
 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div :class="['form-group', errors.name ? 'invalid' : '']">
                                 <label for="name">
                                     <strong class="required">*</strong>
@@ -72,19 +73,6 @@
                                 <div v-if="errors.name"
                                      :class="['alert alert-danger']"
                                      v-text="errors.name[0]"
-                                ></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div :class="['form-group', errors.display_name ? 'invalid' : '']">
-                                <label for="display_name">
-                                    <strong class="required">*</strong>
-                                    Nombre a mostrar (display_name)
-                                </label>
-                                <input type="text" v-model="specie.displayName" id="display_name" class="form-control">
-                                <div v-if="errors.display_name"
-                                     :class="['alert alert-danger']"
-                                     v-text="errors.display_name[0]"
                                 ></div>
                             </div>
                         </div>
@@ -114,8 +102,8 @@
 
                 specie: {
                     name: '',
-                    displayName: '',
-                    status: true,
+                    status: false,
+                    btnClass: '',
                 },
 
                 errors: [],
@@ -141,10 +129,7 @@
                 Requests
                     .store(
                         this.speciesUrl,
-                        {
-                            'name': this.specie.name,
-                            'display_name': this.specie.displayName,
-                        },
+                        { 'name': this.specie.name },
                         () => {
                             this.closeModal()
                             SweetAlert.success(`La Especie ha sido registrada exitosamente!`)
@@ -162,10 +147,7 @@
                     .update(
                         this.speciesUrl,
                         this.specieId,
-                        {
-                            'name': this.specie.name,
-                            'display_name': this.specie.displayName,
-                        },
+                        { 'name': this.specie.name },
                         () => {
                             this.closeModal()
                             SweetAlert.success(`La Especie ha sido actualizada exitosamente!`)
@@ -190,6 +172,22 @@
                         error => { console.log(error) }
                     )
             },
+            toggleStatus(specie) {
+                Requests
+                    .update(
+                        this.speciesUrl,
+                        specie.id,
+                        { 'status': ! specie.status },
+                        response => {
+                            this.index()
+
+                            let status = this.specie.status = response.data.data.status
+                            SweetAlert.success(
+                                `El Estatus de la Especie ha sido ${status ? 'Activado' : 'Desactivado' } exitosamente!`)
+                        },
+                        error => { this.errors = error.response.status === 422 ? error.response.data.errors : [] }
+                    )
+            },
             openModal(action, specie) {
                 this.errors = []
                 this.specie = {}
@@ -207,7 +205,7 @@
                 if (action === 'put') {
                     this.specieId = specie.id
                     this.specie.name = specie.name
-                    this.specie.displayName = specie.displayName
+                    this.specie.status = specie.status
                     this.actionType = action
                     this.modal.title = 'Actualizar la Especie'
                     this.modal.btnTitle = 'Actualizar'

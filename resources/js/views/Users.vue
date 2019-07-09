@@ -51,7 +51,8 @@
                                     <i class="fa fa-edit"></i>
                                 </button>
                                 <button @click="toggleStatus(user)"
-                                        :class="['btn', 'btn-xs', toggleStatusClass(user)]">
+                                        :class="['btn', 'btn-xs', user.status ? 'bg-danger' : 'btn-success', 'text-white']"
+                                        :title="user.status ? 'Desactivar' : 'Activar'">
                                     <i class="fas fa-power-off"></i>
                                 </button>
                             </div>
@@ -210,6 +211,7 @@
                     email: '',
                     status: false,
                     password: '',
+                    btnClass: '',
                 },
 
                 errors: [],
@@ -249,11 +251,7 @@
                             SweetAlert.success(`El Usuario ha sido creada exitosamente!`)
                             this.index()
                         },
-                        error => {
-                            if (error.response.status === 422) {
-                                this.errors = error.response.data.errors
-                            }
-                        }
+                        error => { this.errors = error.response.status === 422 ? error.response.data.errors : [] }
                     )
             },
             update() {
@@ -275,11 +273,7 @@
                             SweetAlert.success(`El Usuario ha sido actualizado exitosamente!`)
                             this.index()
                         },
-                        error => {
-                            if (error.response.status === 422) {
-                                this.errors = error.response.data.errors
-                            }
-                        }
+                        error => { this.errors = error.response.status === 422 ? error.response.data.errors : [] }
                     )
             },
             toggleStatus(user) {
@@ -288,21 +282,15 @@
                         this.usersUrl,
                         user.uuid,
                         { 'status': ! user.status },
-                        () => {
+                        response => {
                             this.index()
-                            let status = user.status ? 'Desactivado' : 'Activado'
-                            SweetAlert.success(`El Estatus del Usuario ha sido ${status} exitosamente!`)
+
+                            let status = this.user.status = response.data.data.status
+                            SweetAlert.success(
+                                `El Estatus del Usuario ha sido ${status ? 'Activado' : 'Desactivado' } exitosamente!`)
                         },
-                        error => {
-                            if (error.response.status === 422) {
-                                this.errors = error.response.data.errors
-                                console.log(this.errors)
-                            }
-                        }
+                        error => { this.errors = error.response.status === 422 ? error.response.data.errors : [] }
                     )
-            },
-            toggleStatusClass(user) {
-                return user.status ? 'btn-danger' : 'btn-success'
             },
             getUserTypes() {
                 Requests
