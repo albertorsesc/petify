@@ -32,6 +32,5 @@ class SpeciesTest extends TestCase
         $response = $this->get(route('web.species.index'));
         $response->assertOk();
         $response->assertViewIs('species.index');
-        $response->assertViewHas('species');
     }
 }

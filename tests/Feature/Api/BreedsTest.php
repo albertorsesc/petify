@@ -99,7 +99,7 @@ class BreedsTest extends TestCase
      *   @throws \Throwable
      *  @endpoint ['DELETE', '/api/breeds/{breed}']
      */
-    public function delete_a_breed()
+    public function soft_delete_a_breed()
     {
         $breed = $this->create(Breed::class);
         

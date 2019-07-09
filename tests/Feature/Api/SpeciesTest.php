@@ -25,6 +25,7 @@ class SpeciesTest extends TestCase
                 [
                     'id' => $species->id,
                     'name' => $species->name,
+                    'status' => $species->status,
                 ]
             ]
         ]);
@@ -98,6 +99,6 @@ class SpeciesTest extends TestCase
         
         $this->deleteJson(route('species.destroy', $species))->assertStatus(204);
         
-        $this->assertDatabaseMissing('species', $species->toArray());
+        $this->assertSoftDeleted('species', $species->toArray());
     }
 }

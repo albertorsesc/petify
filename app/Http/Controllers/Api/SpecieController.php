@@ -11,7 +11,7 @@ class SpecieController extends Controller
 {
     public function index()
     {
-        return SpeciesResource::collection(Species::orderBy('display_name')->get());
+        return SpeciesResource::collection(Species::orderBy('name')->orderBy('status', 'desc')->get());
     }
     
     public function store(SpeciesRequest $request)

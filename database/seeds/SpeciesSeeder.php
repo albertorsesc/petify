@@ -16,32 +16,41 @@ class SpeciesSeeder extends Seeder
             /** Mamiferos */
             [
                 'name' => 'perro',
+                'status' => true,
             ],
             [
                 'name' => 'Gato',
+                'status' => true,
             ],
             [
                 'name' => 'Conejo',
+                'status' => true,
             ],
             [
                 'name' => 'Conejillo de indias',
+                'status' => true,
             ],
             [
                 'name' => 'Hámster',
+                'status' => true,
             ],
             [
                 'name' => 'Raton',
+                'status' => true,
             ],
             [
                 'name' => 'Rata',
+                'status' => true,
             ],
             
             [
                 'name' => 'Tortuga',
+                'status' => true,
             ],
             
             [
                 'name' => 'Perico',
+                'status' => true,
             ],
         ];
         
