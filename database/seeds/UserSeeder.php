@@ -21,9 +21,9 @@ class UserSeeder extends Seeder
                 'phone' => '6862894998',
                 'password' => bcrypt('password'),
                 'status' => true,
-            ]
+            ],
         ];
-    
+
         App\Models\User::insert($users);
     }
 }

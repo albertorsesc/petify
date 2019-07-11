@@ -12,8 +12,8 @@ class SpeciesSeeder extends Seeder
     public function run()
     {
         $animales = [
-            
-            /** Mamiferos */
+
+            /* Mamiferos */
             [
                 'name' => 'perro',
                 'status' => true,
@@ -42,18 +42,18 @@ class SpeciesSeeder extends Seeder
                 'name' => 'Rata',
                 'status' => true,
             ],
-            
+
             [
                 'name' => 'Tortuga',
                 'status' => true,
             ],
-            
+
             [
                 'name' => 'Perico',
                 'status' => true,
             ],
         ];
-        
+
         \App\Models\Species::insert($animales);
     }
 }

@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
 //        PropertyAddressSeeder::class,
 //        PropertyFeatureSeeder::class,
     ];
-    
+
     /**
      * Seed the application's database.
      *

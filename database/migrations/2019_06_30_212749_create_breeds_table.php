@@ -20,7 +20,7 @@ class CreateBreedsTable extends Migration
             $table->boolean('status')->default(true);
             $table->timestamps();
             $table->softDeletes();
-            
+
             $table->foreign('specie_id')->references('id')->on('species');
         });
     }

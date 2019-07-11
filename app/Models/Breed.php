@@ -12,9 +12,8 @@ class Breed extends Model
     protected $fillable = ['specie_id', 'name', 'status'];
     protected $casts = ['status' => 'boolean'];
     protected $with = ['specie'];
-    
+
     /** Relations */
-    
     public function specie()
     {
         return $this->belongsTo(Species::class);

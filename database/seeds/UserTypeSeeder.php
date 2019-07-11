@@ -14,14 +14,14 @@ class UserTypeSeeder extends Seeder
         $userTypes = [
             [
                 'name' => 'root',
-                'display_name' => '#Root'
+                'display_name' => '#Root',
             ],
             [
                 'name' => 'standard-user',
-                'display_name' => 'Usuario Regular'
+                'display_name' => 'Usuario Regular',
             ],
         ];
-    
+
         App\Models\UserType::insert($userTypes);
     }
 }
