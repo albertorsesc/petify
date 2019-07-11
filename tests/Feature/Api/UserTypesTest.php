@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class UserTypesTest extends TestCase
 {
     use RefreshDatabase;
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -26,8 +26,8 @@ class UserTypesTest extends TestCase
                     'id' => $userType->id,
                     'name' => $userType->name,
                     'displayName' => $userType->display_name,
-                ]
-            ]
+                ],
+            ],
         ]);
     }
 }

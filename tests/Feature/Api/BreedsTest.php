@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class BreedsTest extends TestCase
 {
     use RefreshDatabase;
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -18,7 +18,7 @@ class BreedsTest extends TestCase
     public function get_all_breeds()
     {
         $breed = $this->create(Breed::class);
-        
+
         $response = $this->getJson(route('breeds.index'));
         $response->assertOk();
         $response->assertJson([
@@ -26,14 +26,14 @@ class BreedsTest extends TestCase
                 [
                     'id' => $breed->id,
                     'specie' => [
-                        'id' => $breed->specie->id
+                        'id' => $breed->specie->id,
                     ],
                     'name' => $breed->name,
-                ]
-            ]
+                ],
+            ],
         ]);
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -42,14 +42,14 @@ class BreedsTest extends TestCase
     public function store_a_breed()
     {
         $breedData = $this->make(Breed::class);
-        
+
         $response = $this->postJson(route('breeds.store'), $breedData->toArray());
         $response->assertStatus(201);
         $response->assertJson(['data' => ['name' => $breedData->name]]);
-        
+
         $this->assertDatabaseHas('breeds', $breedData->toArray());
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -58,7 +58,7 @@ class BreedsTest extends TestCase
     public function get_a_breed()
     {
         $breed = $this->create(Breed::class);
-        
+
         $response = $this->getJson(route('breeds.show', $breed));
         $response->assertOk();
         $response->assertJson([
@@ -68,10 +68,10 @@ class BreedsTest extends TestCase
                     'id' => $breed->specie->id,
                 ],
                 'name' => $breed->name,
-            ]
+            ],
         ]);
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -88,12 +88,12 @@ class BreedsTest extends TestCase
             'data' => [
                 'id' => $breed->id,
                 'name' => $breedData->name,
-            ]
+            ],
         ]);
-        
+
         $this->assertDatabaseHas('breeds', $breedData->toArray());
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -102,9 +102,9 @@ class BreedsTest extends TestCase
     public function soft_delete_a_breed()
     {
         $breed = $this->create(Breed::class);
-        
+
         $this->deleteJson(route('breeds.destroy', $breed))->assertStatus(204);
-        
+
         $this->assertSoftDeleted('breeds', $breed->toArray());
     }
 }

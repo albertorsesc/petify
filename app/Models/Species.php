@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Species extends Model
 {
     use SoftDeletes;
-    
+
     protected $fillable = ['name', 'status'];
     protected $casts = ['status' => 'boolean'];
 }

@@ -24,7 +24,7 @@ class SpeciesRequest extends FormRequest
     public function rules()
     {
         $isRequired = ! request()->has('status') ? 'required' : null;
-    
+
         return [
             'name' => [$isRequired, 'max:100'],
         ];
