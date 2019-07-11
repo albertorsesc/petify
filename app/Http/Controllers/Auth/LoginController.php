@@ -27,16 +27,17 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
-    
+
     /** Create a new controller instance. */
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
     }
-    
+
     protected function authenticated(Request $request, $user)
     {
-        $request->session()->flash('login', 'Bienvenid@ ' . $user->first_name);
+        $request->session()->flash('login', 'Bienvenid@ '.$user->first_name);
+
         return redirect()->intended($this->redirectPath());
     }
 }

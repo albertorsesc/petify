@@ -90,7 +90,7 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
-    
+
         'travis' => [
             'driver'    => 'mysql',
             'host'      => env('DB_TRAVIS_CI_HOST', 'localhost'),
