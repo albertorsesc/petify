@@ -4,9 +4,13 @@ php:
   - 7.2
   - 7.3
 
+before_install:
+  - sudo apt-get install
+
 before_script:
   - chmod 777 -R storage
   - cp .env.travis .env
+  - mysql -e 'create database petify;'
   - composer install --no-interaction
   - php artisan key:generate
   - php artisan migrate --seed
