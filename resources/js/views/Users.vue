@@ -277,20 +277,15 @@
                     )
             },
             toggleStatus(user) {
-                Requests
-                    .update(
-                        this.usersUrl,
-                        user.uuid,
-                        { 'status': ! user.status },
-                        response => {
+                axios
+                    .put(`${this.usersUrl}/${user.uuid}/toggle-status`)
+                    .then(
+                        () => {
                             this.index()
-
-                            let status = this.user.status = response.data.data.status
-                            SweetAlert.success(
-                                `El Estatus del Usuario ha sido ${status ? 'Activado' : 'Desactivado' } exitosamente!`)
-                        },
-                        error => { this.errors = error.response.status === 422 ? error.response.data.errors : [] }
-                    )
+                            let status = this.user.status ? 'Desactivado' : 'Activado'
+                            SweetAlert.success(`El Estatus del Usuario ha sido ${status} exitosamente!`)
+                        })
+                    .catch(error => { this.errors = error.response.data.errors })
             },
             getUserTypes() {
                 Requests

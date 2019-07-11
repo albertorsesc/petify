@@ -23,12 +23,11 @@ class UserRequest extends FormRequest
      */
     public function rules()
     {
-        $isRequired = ! request()->has('status') ? 'required' : null;
         return [
-            'first_name' => ['max:50', $isRequired],
-            'last_name' => ['max:50', $isRequired],
-            'user_type_id' => ['exists:user_types,id', $isRequired],
-            'email' => ['email', 'max:100', $isRequired, 'unique:users,email,' . $this->user['id']],
+            'first_name' => ['max:50', 'required'],
+            'last_name' => ['max:50', 'required'],
+            'user_type_id' => ['exists:user_types,id', 'required'],
+            'email' => ['email', 'max:100', 'required', 'unique:users,email,' . $this->user['id']],
             'phone' => ['max:60'],
             'password' => [$this->getMethod() === 'POST' ? 'required' : null, 'min:6', 'confirmed']
         ];
