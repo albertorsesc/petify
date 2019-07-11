@@ -2,7 +2,6 @@
 
 namespace Tests\Unit\Http\Requests;
 
-use Illuminate\Support\Arr;
 use Tests\TestCase;
 use App\Models\User;
 use Illuminate\Support\Str;

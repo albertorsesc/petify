@@ -126,4 +126,21 @@ class UsersTest extends TestCase
         
         $this->assertSoftDeleted('users', $user->toArray());
     }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['PUT', '/api/users/{user}/toggle-status']
+     */
+    public function can_toggle_user_status()
+    {
+        $user = $this->create(User::class);
+        $this->assertEquals(true, $user->status);
+        
+        $this->putJson(route('users.toggle-status', $user));
+        $this->assertEquals(false, $user->fresh()->status);
+        
+        $this->putJson(route('users.toggle-status', $user));
+        $this->assertEquals(true, $user->status);
+    }
 }

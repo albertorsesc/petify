@@ -44,4 +44,9 @@ class UserController extends Controller
         return response([], 204);
     }
     
+    public function toggleStatus(User $user)
+    {
+        $user->update(['status' => ! $user->status]);
+    }
+    
 }
