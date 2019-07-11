@@ -27,9 +27,9 @@ class UserRequest extends FormRequest
             'first_name' => ['max:50', 'required'],
             'last_name' => ['max:50', 'required'],
             'user_type_id' => ['exists:user_types,id', 'required'],
-            'email' => ['email', 'max:100', 'required', 'unique:users,email,' . $this->user['id']],
+            'email' => ['email', 'max:100', 'required', 'unique:users,email,'.$this->user['id']],
             'phone' => ['max:60'],
-            'password' => [$this->getMethod() === 'POST' ? 'required' : null, 'min:6', 'confirmed']
+            'password' => [$this->getMethod() === 'POST' ? 'required' : null, 'min:6', 'confirmed'],
         ];
     }
 }

@@ -10,7 +10,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class UsersTest extends TestCase
 {
     use RefreshDatabase;
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -19,7 +19,7 @@ class UsersTest extends TestCase
     public function get_all_user()
     {
         $user = $this->create(User::class);
-        
+
         $response = $this->getJson(route('users.index'));
         $response->assertOk();
         $response->assertJson([
@@ -35,11 +35,11 @@ class UsersTest extends TestCase
                     'email' => $user->email,
                     'phone' => $user->phone,
                     'status' => $user->status,
-                ]
-            ]
+                ],
+            ],
         ]);
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -56,16 +56,16 @@ class UsersTest extends TestCase
             'phone' => $userData->phone,
             'password' => 'secret',
             'password_confirmation' => 'secret',
-            'api_token' => $userData->generateApiToken()
+            'api_token' => $userData->generateApiToken(),
         ];
-        
+
         $response = $this->postJson(route('users.store'), $request);
         $response->assertStatus(201);
         $response->assertJson(['data' => ['fullName' => $userData->fullName()]]);
-        
+
         $this->assertDatabaseHas('users', Arr::except($request, ['password', 'password_confirmation']));
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -80,10 +80,10 @@ class UsersTest extends TestCase
             'data' => [
                 'id' => $user->id,
                 'fullName' => $user->fullName(),
-            ]
+            ],
         ]);
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -100,19 +100,19 @@ class UsersTest extends TestCase
             'email' => $userData->email,
             'phone' => $userData->phone,
         ];
-        
+
         $response = $this->putJson(route('users.update', $user), $request);
         $response->assertStatus(200);
         $response->assertJson([
             'data' => [
                 'id' => $user->id,
-                'fullName' => $userData->fullName()
-            ]
+                'fullName' => $userData->fullName(),
+            ],
         ]);
-        
+
         $this->assertDatabaseHas('users', $request);
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -121,12 +121,12 @@ class UsersTest extends TestCase
     public function soft_delete_a_user()
     {
         $user = $this->create(User::class);
-        
+
         $this->deleteJson(route('users.destroy', $user))->assertStatus(204);
-        
+
         $this->assertSoftDeleted('users', $user->toArray());
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -136,10 +136,10 @@ class UsersTest extends TestCase
     {
         $user = $this->create(User::class);
         $this->assertEquals(true, $user->status);
-        
+
         $this->putJson(route('users.toggle-status', $user));
         $this->assertEquals(false, $user->fresh()->status);
-        
+
         $this->putJson(route('users.toggle-status', $user));
         $this->assertEquals(true, $user->status);
     }
