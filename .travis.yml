@@ -1,16 +1,25 @@
+sudo: required
 language: php
+dist: xenial
+
 php:
-  - 7.1
   - 7.2
   - 7.3
 
 before_install:
   - mysql -e 'CREATE DATABASE petify;'
 
+install:
+  - cp .env.example .env
+  - travis_retry composer install --no-interaction
+
 before_script:
   - chmod 777 -R storage
-  - cp .env.travis .env
   - composer install --no-interaction
+  - cp .env.travis .env
+  - php artisan key:generate
+  - touch database/database.sqlite
+  - php artisan migrate --seed
   - npm install
 
 services:
@@ -22,6 +31,4 @@ cache:
     - vendor
 
 script:
-  - php artisan key:generate
-  - php artisan migrate --seed
   - vendor/bin/phpunit
