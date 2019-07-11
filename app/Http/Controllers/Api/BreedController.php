@@ -37,4 +37,9 @@ class BreedController extends Controller
 
         return response([], 204);
     }
+
+    public function toggleStatus(Breed $breed)
+    {
+        $breed->update(['status' => ! $breed->status]);
+    }
 }

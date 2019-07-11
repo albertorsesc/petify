@@ -6,6 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="authUser" content="{{ auth()->user() }}">
 
     <title>@yield('title') | {{ config('app.name') }}</title>
 
@@ -28,7 +29,7 @@
 
     <main class="py-4">
 
-{{--        <toastr :message="{{ json_encode(session('login')) }}"></toastr>--}}
+        <toastr :message="{{ json_encode(session('login')) }}"></toastr>
 
         <div class="container">
             @yield('content')

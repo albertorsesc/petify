@@ -6,5 +6,6 @@ Route::namespace('Api')->group(function () {
     Route::apiResource('users', 'UserController');
 
     Route::apiResource('species', 'SpecieController');
+    Route::put('breeds/{breed}/toggle-status', 'BreedController@toggleStatus')->name('breeds.toggle-status');
     Route::apiResource('breeds', 'BreedController');
 });

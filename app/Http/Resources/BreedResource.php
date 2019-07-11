@@ -18,6 +18,7 @@ class BreedResource extends JsonResource
             'id' => $this->id,
             'specie' => new SpeciesResource($this->whenLoaded('specie')),
             'name' => $this->name,
+            'status' => $this->status,
         ];
     }
 }

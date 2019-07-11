@@ -91,6 +91,18 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'travis' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_TRAVIS_CI_HOST', 'localhost'),
+            'database'  => env('DB_TRAVIS_CI_DATABASE', 'homestead_test'),
+            'username'  => env('DB_TRAVIS_CI_USERNAME', 'homestead'),
+            'password'  => env('DB_TRAVIS_CI_PASSWORD', 'secret'),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
+
     ],
 
     /*
