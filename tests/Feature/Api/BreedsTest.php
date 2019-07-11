@@ -30,8 +30,8 @@ class BreedsTest extends TestCase
                     ],
                     'name' => $breed->name,
                     'status' => $breed->status,
-                ]
-            ]
+                ],
+            ],
         ]);
     }
 
@@ -108,7 +108,7 @@ class BreedsTest extends TestCase
 
         $this->assertSoftDeleted('breeds', $breed->toArray());
     }
-    
+
     /**
      *   @test
      *   @throws \Throwable
@@ -118,10 +118,10 @@ class BreedsTest extends TestCase
     {
         $breed = $this->create(Breed::class);
         $this->assertEquals(true, $breed->status);
-        
+
         $this->putJson(route('breeds.toggle-status', $breed));
         $this->assertEquals(false, $breed->fresh()->status);
-        
+
         $this->putJson(route('breeds.toggle-status', $breed));
         $this->assertEquals(true, $breed->status);
     }

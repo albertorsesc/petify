@@ -27,10 +27,10 @@ class BreedRequest extends FormRequest
                         ($this->getMethod() === 'POST' || $this->getMethod() === 'PUT') ?
                         'required' :
                         null;
-    
+
         return [
             'specie_id' => [$isRequired, 'exists:species,id'],
-            'name' => [$isRequired, 'max:100']
+            'name' => [$isRequired, 'max:100'],
         ];
     }
 }
