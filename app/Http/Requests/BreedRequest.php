@@ -23,7 +23,10 @@ class BreedRequest extends FormRequest
      */
     public function rules()
     {
-        $isRequired = ! request()->has('status') ? 'required' : null;
+        $isRequired = ! request()->has('status') ||
+                        ($this->getMethod() === 'POST' || $this->getMethod() === 'PUT') ?
+                        'required' :
+                        null;
     
         return [
             'specie_id' => [$isRequired, 'exists:species,id'],

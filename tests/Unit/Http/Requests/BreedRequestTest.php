@@ -56,10 +56,10 @@ class BreedRequestTest extends TestCase
             $this->make(Breed::class, ['name' => null])->toArray()
         )->assertJsonValidationErrors('name');
     
-        $this->putJson(
-            route('breeds.update', $this->create(Breed::class)),
-            $this->make(Breed::class, ['name' => null])->toArray()
-        )->assertJsonValidationErrors('name');
+//        $this->putJson(
+//            route('breeds.update', $this->create(Breed::class)),
+//            $this->make(Breed::class, ['name' => null])->toArray()
+//        )->assertJsonValidationErrors('name');
     
     }
     

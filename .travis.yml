@@ -5,16 +5,16 @@ php:
   - 7.3
 
 before_install:
-  - sudo apt-get install
+  - mysql -e 'CREATE DATABASE petify;'
 
 before_script:
   - chmod 777 -R storage
   - cp .env.travis .env
-  - mysql -e 'create database petify;'
   - composer install --no-interaction
-  - php artisan key:generate
-  - php artisan migrate --seed
   - npm install
+
+services:
+  - mysql
 
 cache:
   directories:
@@ -22,4 +22,6 @@ cache:
     - vendor
 
 script:
+  - php artisan key:generate
+  - php artisan migrate --seed
   - vendor/bin/phpunit
