@@ -29,6 +29,7 @@ class BreedsTest extends TestCase
                         'id' => $breed->specie->id
                     ],
                     'name' => $breed->name,
+                    'status' => $breed->status,
                 ]
             ]
         ]);
@@ -106,5 +107,22 @@ class BreedsTest extends TestCase
         $this->deleteJson(route('breeds.destroy', $breed))->assertStatus(204);
         
         $this->assertSoftDeleted('breeds', $breed->toArray());
+    }
+    
+    /**
+     *   @test
+     *   @throws \Throwable
+     *  @endpoint ['PUT', '/api/breeds/{breed}/toggle-status']
+     */
+    public function can_toggle_breed_status()
+    {
+        $breed = $this->create(Breed::class);
+        $this->assertEquals(true, $breed->status);
+        
+        $this->putJson(route('breeds.toggle-status', $breed));
+        $this->assertEquals(false, $breed->fresh()->status);
+        
+        $this->putJson(route('breeds.toggle-status', $breed));
+        $this->assertEquals(true, $breed->status);
     }
 }

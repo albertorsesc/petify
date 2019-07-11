@@ -9,5 +9,6 @@ $factory->define(Breed::class, function (Faker $faker) {
     return [
         'specie_id' => factory(\App\Models\Species::class)->create()->id,
         'name' => $faker->word,
+        'status' => true,
     ];
 });

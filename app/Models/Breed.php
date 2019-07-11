@@ -9,8 +9,8 @@ class Breed extends Model
 {
     use SoftDeletes;
     
-    public $timestamps = false;
-    protected $fillable = ['specie_id', 'name'];
+    protected $fillable = ['specie_id', 'name', 'status'];
+    protected $casts = ['status' => 'boolean'];
     protected $with = ['specie'];
     
     /** Relations */

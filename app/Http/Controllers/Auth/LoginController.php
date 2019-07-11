@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -26,14 +27,16 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
-
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+    
+    /** Create a new controller instance. */
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+    
+    protected function authenticated(Request $request, $user)
+    {
+        $request->session()->flash('login', 'Bienvenid@ ' . $user->first_name);
+        return redirect()->intended($this->redirectPath());
     }
 }

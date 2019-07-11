@@ -59,7 +59,12 @@
                                 <a class="dropdown-item"
                                    href="{{ route('web.species.index') }}">
                                     <i class="fas fa-paw"></i>
-                                    Species
+                                    Especies
+                                </a>
+                                <a class="dropdown-item"
+                                   href="{{ route('web.breeds.index') }}">
+                                    <i class="fas fa-dog"></i>
+                                    Razas
                                 </a>
 
                             </div>
